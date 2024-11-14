@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<title>Piti Ambrus</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="html 5 és grid">
+		<meta name="keywords" content="html, grid">
+		<meta name="author" content="Piti Ambrus">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="iconstyle.css">
+        <script src="script.js" defer ></script>
+	</head>
+    <body>
+        <main>
+            <header>
+                <div class="infobar">
+                    <ul class="infobar-ul">
+                        <li class="infobar-ul-li-phone"><span class="icon-phone"></span> +36 00 0000000</li>
+                        <li class="infobar-ul-li-mail"><span class="icon-mail"></span> emal@email.com</li>
+                        <li class="infobar-ul-li-location"><span class="icon-pin"></span> Budapest xy u. 16</li>
+                        <li class="infobar-ul-li-empty"></li>
+                        <li class="infobar-ul-li-currency"><span class="icon-banknote"></span> HUF</li>
+                        <li class="infobar-ul-li-account"><span class="icon-user"></span> My Account</li>
+                    </ul>
+                </div>
+                <div class="mainhead">
+                    <div class="meanhead-name"><h1>Piti Ambrus</h1><h1 class="h1mynamedot">.</h1></div>
+                    <div class="meanhead-searchbox">
+                    
+                        <input type="text" placeholder="Search here" class="search-input">
+                        <button onclick="showErrorMessage(event)" class="search-button">Search</button>
+                    
+                    </div>
+                    <div class="meanhead-logos">Logos go here
+                        <div class="mainhead-logos-wishlist">
+                            <span class="mainhead-logos-wishlist-index"></span>
+                            <p class="mainhead-logos-wishlist-icon"></p>
+                            <p class="mainhead-logos-wishlist-text"></p>
+                        </div>
+                        <div class="mainhead-div-logos-cart">
+                            <span class="mainhead-logos-cart-index"></span>
+                            <p class="mainhead-logos-cart-icon"></p>
+                            <p class="mainhead-logos-cart-text">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <nav>
+                <ul class="navlist">
+                    <li><a href="#" id="a-home" class="navlist-a-active" onclick="activate('div-products-home','a-home')">Home</a></li>
+                    <li><a href="#" id="a-headphones" class="navlist-a-inactive" onclick="activate('div-products-headphones','a-headphones')">Headphones</a></li>
+                    <li><a href="#" id="a-laptops" class="navlist-a-inactive" onclick="activate('div-products-laptops','a-laptops')">Laptops</a></li>
+                    <li><a href="#" id="a-smartphones" class="navlist-a-inactive" onclick="activate('div-products-smartphones','a-smartphones')">Smartphones</a></li>
+                    <li><a href="#" id="a-cameras" class="navlist-a-inactive" onclick="activate('div-products-cameras','a-cameras')">Cameras</a></li>
+                    <li><a href="#" id="a-accessories" class="navlist-a-inactive" onclick="activate('div-products-accessories','a-accessories')">Accessories</a></li>
+                </ul>
+            </nav>
+            <article>
+                <div id="div-products-home" class="divtoshow">
+
+                    <div class="productcategory-text1">NEW PRODUCTS</div>
+
+                    <div onclick="showErrorMessage2(event)" id="product1" class="product">
+                        <div class="productline1"><img src="images\p1-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$190.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product2" class="product">
+                        <div class="productline1"><img src="images\p2-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$590.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product3" class="product">
+                        <div class="productline1"><img src="images\p3-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$780.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product4" class="product">
+                        <div class="productline1"><img src="images\p4-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$249.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product5" class="product">
+                        <div class="productline1"><img src="images\p5-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$680.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product6" class="product">
+                        <div class="productline1"><img src="images\p6-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$179.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product7" class="product">
+                        <div class="productline1"><img src="images\p6-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$339.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product8" class="product">
+                        <div class="productline1"><img src="images\p5-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$99.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product9" class="product">
+                        <div class="productline1"><img src="images\p4-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$980.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product10" class="product">
+                        <div class="productline1"><img src="images\p1-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$129.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product11" class="product">
+                        <div class="productline1"><img src="images\p2-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$489.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product12" class="product">
+                        <div class="productline1"><img src="images\p3-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$290.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+
+                    <div class="productcategory-text2">HOT DEALS</div>
+
+
+                    <div onclick="showErrorMessage2(event)" id="product13" class="product">
+                        <div class="productline1"><img src="images\p1-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$190.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product14" class="product">
+                        <div class="productline1"><img src="images\p2-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$590.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product15" class="product">
+                        <div class="productline1"><img src="images\p3-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$780.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product16" class="product">
+                        <div class="productline1"><img src="images\p4-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$249.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product17" class="product">
+                        <div class="productline1"><img src="images\p5-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$680.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product18" class="product">
+                        <div class="productline1"><img src="images\p6-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$179.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product19" class="product">
+                        <div class="productline1"><img src="images\p6-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$339.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product20" class="product">
+                        <div class="productline1"><img src="images\p5-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$99.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product21" class="product">
+                        <div class="productline1"><img src="images\p4-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$980.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product22" class="product">
+                        <div class="productline1"><img src="images\p1-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$129.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product23" class="product">
+                        <div class="productline1"><img src="images\p2-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$489.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                    <div onclick="showErrorMessage2(event)" id="product24" class="product">
+                        <div class="productline1"><img src="images\p3-headphones.png"></div>
+                        <div class="productline2">CATEGORY</div>
+                        <div class="productline3">PRODUCT NAME</div>
+                        <div class="productline4">$290.00 <span>$990.00</span></div>
+                        <div class="productline5"><span class="starlines"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-solid"></span><span class="icon-star-outline"></span><span class="starlines"></span></div>
+                        <div class="productline6"><span onclick="showErrorMessage(event)" class="icon-heart-outline"></span><span onclick="showErrorMessage(event)" class="icon-arrows-left-right"></span><span onclick="showErrorMessage(event)" class="icon-cart-outline"></span></div>
+                    </div>
+
+                </div>
+                <div id="div-products-headphones" class="divtohide"></div>
+                <div id="div-products-laptops" class="divtohide"></div>
+                <div id="div-products-smartphones" class="divtohide"></div>
+                <div id="div-products-cameras" class="divtohide"></div>
+                <div id="div-products-accessories" class="divtohide"></div>
+            </article>
+            <footer>
+                <p>valami adatok</p>
+            </footer>
+        </main>
+    </body>
+</html>
